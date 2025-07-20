@@ -4,3 +4,10 @@
 2025-07-09 14:15:32,326 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
 2025-07-09 14:16:59,399 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
 2025-07-09 14:17:43,804 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-07-09 14:17:47,284 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-07-09 14:17:49,325 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-07-09 14:18:23,003 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-09 14:18:23,004 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-09 14:18:27,937 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-07-09 14:21:35,500 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-07-09 14:21:35,501 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2

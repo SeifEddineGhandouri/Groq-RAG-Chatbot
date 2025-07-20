@@ -1,6 +1,6 @@
 # 🚀 Groq RAG Chatbot 
 
-An AI-powered document analysis chatbot built with **Gradio** and **Groq LLMs**, featuring side-by-side Retrieval-Augmented Generation (RAG) and non-RAG chat, a modern UI, and support for PDF, Word, CSV, JSON, and text files. Upload documents and compare Groq LLM answers with and without RAG context—no setup beyond your Groq API key!
+An AI-powered document analysis chatbot built with **Gradio** and **Groq LLMs**, using **Retrieval-Augmented Generation (RAG)** and a modern UI. Users can upload documents (PDF, Word, JSON, etc.) and ask questions based on the content — no setup beyond your Groq API key.
 
 ---
 
@@ -55,9 +55,24 @@ An AI-powered document analysis chatbot built with **Gradio** and **Groq LLMs**,
 
 ---
 
-## 🛠 Installation
+## 📦 Requirements
 
-### 1. Install Python Dependencies
+To install all required packages, run:
 
-```bash
+```sh
 pip install -r requirements.txt
+```
+
+This will install:
+- gradio
+- requests
+- langchain
+- chromadb
+- sentence-transformers
+- PyPDF2
+- python-docx
+- pandas
+
+These packages ensure your chatbot works with all supported file types and RAG features.
+
+
