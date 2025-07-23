@@ -1,6 +1,7 @@
-# 🚀 Groq RAG Chatbot 
+# 🚀 Arabic-Real-Estate-Document-Analyzer
 
-An AI-powered document analysis chatbot built with **Gradio** and **Groq LLMs**, using **Retrieval-Augmented Generation (RAG)** and a modern UI. Users can upload documents (PDF, Word, JSON, etc.) and ask questions based on the content — no setup beyond your Groq API key.
+
+An AI-powered Arabic real estate document analysis chatbot built with **Gradio** and **Groq LLMs**, using **Retrieval-Augmented Generation (RAG)** and a modern UI. Users can upload documents (PDF, Word, JSON, etc.) and ask questions based on the content — no setup beyond your Groq API key.
 
 ---
 
@@ -57,23 +58,56 @@ An AI-powered document analysis chatbot built with **Gradio** and **Groq LLMs**,
 
 ## 📦 Requirements
 
-To install all required packages, run:
+To install all required Python packages, run:
 
 ```sh
 pip install -r requirements.txt
 ```
 
 This will install:
- pdfplumber
- pdf2image
- pytesseract
- pillow
-
-These packages ensure your chatbot works with all supported file types and RAG features.
+- gradio
+- requests
+- langchain
+- chromadb
+- sentence-transformers
+- PyPDF2
+- pdfplumber
+- pdf2image
+- pytesseract
+- python-docx
+- pandas
+- pillow
 
 **System requirements:**
-- [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) (must be installed separately for OCR support)
-    - For Arabic OCR, download and place `ara.traineddata` in your Tesseract `tessdata` folder.
+
+- [Tesseract OCR (Windows build by UB Mannheim)](https://github.com/UB-Mannheim/tesseract/wiki)  
+  Download and install. Add the install path (e.g., `C:\Program Files\Tesseract-OCR`) to your system PATH.
+  - For Arabic OCR, download [ara.traineddata](https://github.com/tesseract-ocr/tessdata) and place it in your Tesseract `tessdata` folder (e.g., `C:\Program Files\Tesseract-OCR\tessdata`).
+- [Poppler for Windows](https://github.com/oschwartz10612/poppler-windows/releases)  
+  Download and extract. Add the following to your system environment variables:
+  - `C:\poppler-24.08.0\Library\bin` (or your Poppler bin path) to your PATH.
+
+**How to set environment variables (Windows):**
+1. Open System Properties > Advanced > Environment Variables.
+2. Under "System variables", find and edit the `Path` variable.
+3. Add:
+   - `C:\Program Files\Tesseract-OCR`
+   - `C:\poppler-24.08.0\Library\bin`
+4. Click OK and restart your terminal/PC if needed.
+
+**Summary of all dependencies:**
+- gradio
+- requests
+- langchain
+- chromadb
+- sentence-transformers
+- PyPDF2
+- pdfplumber
+- pdf2image
+- pytesseract
+- python-docx
+- pandas
+- pillow
 
 These packages and tools ensure your chatbot works with all supported file types, scanned/image PDFs, and RAG features.
 
