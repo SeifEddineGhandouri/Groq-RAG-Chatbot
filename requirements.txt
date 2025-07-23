@@ -4,5 +4,9 @@ langchain
 chromadb
 sentence-transformers
 PyPDF2
+pdfplumber
+pdf2image
+pytesseract
 python-docx
 pandas
+pillow
